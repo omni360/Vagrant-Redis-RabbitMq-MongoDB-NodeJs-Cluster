@@ -37,10 +37,10 @@ file { '/home/shipit/.ssh' :
 #  require => [ User['shipit'], File['/home/shipit/.ssh'] ],
 #}
 
-ssh_authorized_key { 'philip.a.senger@cngrgroup.com':
+ssh_authorized_key { 'omni360@qq.com':
   user    => 'shipit',
   type    => 'ssh-rsa',
-  key     => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDji22H6siMnmxsvjpbw1lwnjJ9gKL4YAHIxmQA59GZ34BZzdxXDrJLJbnVXjcn1XrWGXmbBj/KJJWSfgBoJ2EOBzBQm9yPVnv7q4ujmpZJwvPH/c6GKS2jz20V5WvTwnByeLEaOLmqpeA/ullrF6ynSisGz+zL1ArjdXAPnqLpQGI9LE+xloXnLhBt4aI9P66f5s57y3a3cUB60XP7vqvYaS0lJHt37CvyppL3fWDUf0WfZt4L1WR1HBgillqXgKc4Cbwy2mOijFrhHeY6hebq1vIFAdLrg1TRTdLgNFHg2kJU1LbfofwgK6nHgmy7WrYsEm7FGXEVLZqlgqGteZowUWDsRWoysEo1tubElK8q7L8ZndImOe8PG+1naWTQ+ehN0+957pvXMqkHC9Y3sczyFkHI2jgc3CNJ8QdKvCrw3GKutNLZKiqDWHxlnIvQ17thHirBjaUvDWY+eFgcvGkHJ6K2BgaRgIo6b8qW6/LJxjevz+R/rnqj3V8JhdtWlBjDSw3vH9+dqIHf7l/0LItN+RGNEvgzNu0nstPlQ+oCi4Behb9LObZN3UU0OlDXHpkakcCNnRqCc19VDb8vddnAaXxUXefP9ACeln4Qrlr8vGKxWw5NRb0QOIthiitZzqcyKzJIui+D52Ug1L2Y5LIDeRPoYVO57DoouhExScb5fQ==',
+  # key     => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDji22H6siMnmxsvjpbw1lwnjJ9gKL4YAHIxmQA59GZ34BZzdxXDrJLJbnVXjcn1XrWGXmbBj/KJJWSfgBoJ2EOBzBQm9yPVnv7q4ujmpZJwvPH/c6GKS2jz20V5WvTwnByeLEaOLmqpeA/ullrF6ynSisGz+zL1ArjdXAPnqLpQGI9LE+xloXnLhBt4aI9P66f5s57y3a3cUB60XP7vqvYaS0lJHt37CvyppL3fWDUf0WfZt4L1WR1HBgillqXgKc4Cbwy2mOijFrhHeY6hebq1vIFAdLrg1TRTdLgNFHg2kJU1LbfofwgK6nHgmy7WrYsEm7FGXEVLZqlgqGteZowUWDsRWoysEo1tubElK8q7L8ZndImOe8PG+1naWTQ+ehN0+957pvXMqkHC9Y3sczyFkHI2jgc3CNJ8QdKvCrw3GKutNLZKiqDWHxlnIvQ17thHirBjaUvDWY+eFgcvGkHJ6K2BgaRgIo6b8qW6/LJxjevz+R/rnqj3V8JhdtWlBjDSw3vH9+dqIHf7l/0LItN+RGNEvgzNu0nstPlQ+oCi4Behb9LObZN3UU0OlDXHpkakcCNnRqCc19VDb8vddnAaXxUXefP9ACeln4Qrlr8vGKxWw5NRb0QOIthiitZzqcyKzJIui+D52Ug1L2Y5LIDeRPoYVO57DoouhExScb5fQ==',
   require => [ File[ '/home/shipit/.ssh' ] ],
 }
 

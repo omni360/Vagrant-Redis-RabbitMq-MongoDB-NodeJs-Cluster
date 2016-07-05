@@ -2,11 +2,11 @@
 # vi: set ft=ruby :
 
 boxes = [
-  { :name => :redis,             :ip => '192.168.33.10', :ssh_port => 2202, :cpus => 1, :mem => 1024, :mac => "720002691321", :puppet => "redis.pp"    },
-  { :name => :mongodb,           :ip => '192.168.33.12', :ssh_port => 2204, :cpus => 1, :mem => 1024, :mac => "720002691343", :puppet => "mongodb.pp"  },
-  { :name => :rabbitmq,          :ip => '192.168.33.13', :ssh_port => 2205, :cpus => 1, :mem => 1024, :mac => "720002691354", :puppet => "rabbitmq.pp" },
-  { :name => :service,           :ip => '192.168.33.11', :ssh_port => 2203, :cpus => 1, :mem => 1024, :mac => "720002691332", :puppet => "nodejs.pp"   },
-  { :name => :worker,            :ip => '192.168.33.14', :ssh_port => 2206, :cpus => 1, :mem => 1024, :mac => "720002691365", :puppet => "nodejs.pp"   },
+  { :name => :redis,             :ip => '192.168.33.10', :ssh_port => 2202, :cpus => 4, :mem => 2048, :mac => "720002691321", :puppet => "redis.pp"    },
+  { :name => :mongodb,           :ip => '192.168.33.12', :ssh_port => 2204, :cpus => 4, :mem => 2048, :mac => "720002691343", :puppet => "mongodb.pp"  },
+  { :name => :rabbitmq,          :ip => '192.168.33.13', :ssh_port => 2205, :cpus => 4, :mem => 2048, :mac => "720002691354", :puppet => "rabbitmq.pp" },
+  { :name => :service,           :ip => '192.168.33.11', :ssh_port => 2203, :cpus => 4, :mem => 2048, :mac => "720002691332", :puppet => "nodejs.pp"   },
+  { :name => :worker,            :ip => '192.168.33.14', :ssh_port => 2206, :cpus => 4, :mem => 2048, :mac => "720002691365", :puppet => "nodejs.pp"   },
 ]
 
 VAGRANTFILE_API_VERSION = "2"
